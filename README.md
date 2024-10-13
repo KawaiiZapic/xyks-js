@@ -9,3 +9,7 @@
 2. 等待开始: mask元素消失, `.mask` / `.matching`
 3. 模拟手写: 针对源码实现直接注入最小事件细节
 4. 等待识别: hook`CanvasRenderingContext2D.clearRect`, 调用说明识别完成被清空画布
+
+# 特征检测情况
+* 2024.10.10 初版, hook `XHR`拦截返回
+* 2024.10.11 接口加密, 改为hook `JSON.parse`
