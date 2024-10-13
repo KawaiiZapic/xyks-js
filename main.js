@@ -1,6 +1,6 @@
 (() => {
     const hookWith = (target, prop, hook) => {
-        const originalFunction = target[prop];
+        const originalFunction = target?.[prop];
         if (!originalFunction) throw Error("Function " + prop + " not found.");
         const proxy = new Proxy(originalFunction, {
             apply(target, thisArg, args) {
